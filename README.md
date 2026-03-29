@@ -4,7 +4,7 @@ Através desse repositorio, irei documentar processos realizados para criacao de
 ## 🔍 Tecnologias
 - Python
 
-## 📌 Criacao Ransomware Simulado
+## [📌 Criacao Ransomware Simulado](Ransomware)
 
 Este projeto foi desenvolvido com fins educacionais, demonstrando na prática o funcionamento de criptografia simétrica aplicada a arquivos locais.
 
@@ -13,58 +13,12 @@ Utiliza a biblioteca cryptography (Fernet) para:
 - Criptografar arquivos
 - Restaurar arquivos criptografados (descriptografia)
 
-## ⚠️ Aviso importante
 
-Este projeto é destinado exclusivamente para estudo em ambiente controlado.
+## 📌 Criacao Keylogger Simulado
 
-- Não utilize em arquivos importantes
--  Não execute fora de ambientes de teste
-- A perda da chave (chave.key) torna os arquivos irrecuperáveis
+Este projeto foi desenvolvido com fins educacionais, com o objetivo de entender como funciona a captura de eventos de teclado em Python.
 
-## ⚙️ Como funciona
+O projeto contém duas versões:
 
-Antes da criacao do programa, tive que desabilitar o Windows Denfender, pois estava colocando o arquivo em quarentena e posteriormente excluindo.
-
-### 🔒 Criptografia
-
-- Gera uma chave criptográfica (chave.key)
-- Procura arquivos dentro da pasta test_files
-- Criptografa os arquivos encontrados
-- Sobrescreve os arquivos originais
-- Cria um arquivo de aviso (LEIA-ME.txt)
-
-### 🔓 Descriptografia
-
-- Utiliza a mesma chave gerada
-- Restaura os arquivos ao estado original
-- Processa automaticamente todos os arquivos do diretório
-
-## 📂 Estrutura esperada
-
-- │── ransomware.py 
-- │── descrypt.py 
-- │── test_files/ 
-    - ├── arquivo1.txt 
-    - ├── arquivo2.jpg
-
-## ▶️ Como usar
-
-1. Instalar dependência
-
-    `pip install cryptography`
-
-2. Criptografar arquivos
-
-    `python ransomware.py`
-
-3. Descriptografar arquivos
-
-    `python decrypt.py`
-
-
-## 🧠 Conceitos abordados
-- Criptografia simétrica (Fernet)
-- Manipulação de arquivos binários
-- Automação com Python
-- Percurso de diretórios com os.walk
-- Segurança da informação (conceitos básicos)
+📄 Keylogger local: registra teclas digitadas em um arquivo (log.txt)
+📧 Keylogger com envio: registra teclas e envia os dados periodicamente por e-mail
